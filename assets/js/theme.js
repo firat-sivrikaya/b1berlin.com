@@ -2108,6 +2108,11 @@
 		}
 	});
 
+	// Artist image zoom on hover
+	$(".artist-image").each(function() {
+		$(this).find("img").wrap('<div class="artist-image-hover-zoom"></div>');
+	});
+
 
 
 	// ================================================================

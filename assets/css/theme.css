@@ -9978,3 +9978,33 @@ body:not(.tt-boxed) .tt-footer-inner,
 		display: none;
 	}
 }
+
+/* Artists 
+==================== */
+
+.artist-image-container {
+	max-width: 275px; 
+	margin: 0 auto 20px auto;
+}
+
+.artist-name {
+	font-size: 28px; 
+	margin-bottom: 20px;
+}
+
+.artist-card {
+	margin-bottom: 40px;
+	margin-top: 40px;
+}
+
+.artist-image {
+	/* Hover zoom effect will be handled by CSS/JS. The image will be wrapped in artist-image-hover-zoom by JS */
+}
+
+.artist-image .artist-image-hover-zoom {
+	transition: all 1s cubic-bezier(0.07, 0.72, 0.29, 0.96);
+}
+
+.artist-image:hover .artist-image-hover-zoom {
+	transform: scale(1.05);
+}
